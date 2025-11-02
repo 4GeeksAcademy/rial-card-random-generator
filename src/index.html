@@ -1,35 +1,57 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/img/4geeks.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello Rigo with Vanilla.js</title>
+
+  <!-- Fontawesome is our recomended library for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- Write your HTML code here, you can delete everything withing the body tags -->
+  <div class="container-fluid text-center">
+
+    <div class="container border bg-light mt-4 border-dark rounded-3" style="width: 220px; height: 300px;">
+      <div class="row align-items-center" style="width: 220px; height: 40px;">
+        <div class="col text-start">
+          <h1 id="paloHeader"></h1>
+        </div>
       </div>
+      <div class="row align-items-center" style="width: 220px; height: 205px;">
+        <div class="col">
+          <p id="numberBody" class="fs-1 fw-bold">2</p>
+        </div>
+      </div>
+      <div class="row align-items-center" style="width: 220px; height: 40px;">
+        <div class="col text-start transform">
+          <h1 id="paloFooter"></h1>
+        </div>
+      </div><br>
+      <button id="generateButton" class="btn btn-primary">Generate</button>
     </div>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
+
+    <!-- <h1 class="mt-5">Hello Rigo!</h1>
+    <img src="./assets/img/rigo-baby.jpg" />
+    <p class="alert alert-warning mt-4">
+      If this text is <b>not</b> centered and <b>yellow</b>, you probably have
+      an error
+    </p>
+    <div class="fixed-bottom p-4">
+      Made with ❤️ by
+      <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    </div> -->
+  </div>
+
+
+
+  <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
+  <script type="module" src="/app.js"></script>
+</body>
+
 </html>
